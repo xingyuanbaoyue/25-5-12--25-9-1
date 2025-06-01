@@ -72,6 +72,51 @@
   </style>
 </head>
 <body>
+<head>
+  <meta charset="UTF-8" />
+  <title>滚动公告栏示例</title>
+  <style>
+    .announcement-bar {
+      background-color: #ffe4f1;
+      color: #8c3c5c;
+      overflow: hidden;
+      white-space: nowrap;
+      padding: 6px 0;
+      font-size: 14px;
+      font-family: sans-serif;
+      border-bottom: 1px solid #f4c5d9;
+    }
+
+    .announcement-bar .marquee {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll-left 15s linear infinite;
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 示例导航栏 -->
+  <nav style="background: #ffcce5; padding: 10px; font-weight: bold;">
+    🌸 星原抱月主页导航栏 🌸
+  </nav>
+
+  <!-- 滚动公告栏 -->
+  <div class="announcement-bar">
+    <div class="marquee">
+      🌸 欢迎访问星原抱月主页！本站支持多语言，点击右上角切换 ｜ Welcome to Xingyuan Baoyue's homepage! 🌸
+    </div>
+  </div>
+  
 </head>
   <!-- 其他内容... -->
 </head>
