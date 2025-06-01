@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <title>星原抱月 - 紹介</title>
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+  <!-- 导航栏 -->
+  <nav class="flex items-center justify-between px-4 py-2 bg-white/80 backdrop-blur-md shadow text-black">
+    <div class="text-3xl font-bold text-gray-900">紹介</div>
+    <div class="flex items-center space-x-4 text-base">
+      <a href="index.html">首页</a>
+      <a href="live.html">配信</a>
+      <a href="about.html">紹介</a>
+      </select>
+    </div>
+  </nav>
+</body>
+<style>
+    body {
+      margin: 0;
+      font-family: 'Noto Sans SC', sans-serif;
+      background: url('https://moe.jitsu.top/img/?sort=pc&size=mw1024') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      overflow-x: hidden;
+    }
+    #loading-screen {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-color: #fff0f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 2000;
+    }
+    .spinner {
+      width: 80px;
+      height: 80px;
+      border: 6px solid #f8bbd0;
+      border-top: 6px solid #ec407a;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    .typed-text {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      text-align: center;
+    }
+  </style>
+</head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <main>
+   <div class="mt-8 mx-auto w-full max-w-xl px-4">
+  <div class="bg-pink-100 border border-pink-300 text-pink-900 rounded-xl p-4 shadow">
+        <h3 class="text-lg font-semibold mb-2">星原抱月</h3>
+        <p class="text-sm leading-relaxed">
+      <p>VTuber、bilibili、Twitch、YouTubeなどのプラットフォームでライブ放送中、フォローと応援を歓迎します！</p>
+    </section>
+   </div>
+  </main>
+ <script>
+  // 设置网站上线时间
+  const siteLaunchTime = new Date("2025-05-01T00:00:00");
+
+  function updateSiteRuntime() {
+    const now = new Date();
+    let diff = Math.floor((now - siteLaunchTime) / 1000);
+
+    const days = Math.floor(diff / (3600 * 24));
+    diff %= 3600 * 24;
+    const hours = Math.floor(diff / 3600);
+    diff %= 3600;
+    const minutes = Math.floor(diff / 60);
+    const seconds = diff % 60;
+
+    document.getElementById("site-runtime").textContent =
+      `${days}日数 ${hours}時間 ${minutes}分 ${seconds}秒`;
+  }
+
+  setInterval(updateSiteRuntime, 1000);
+  updateSiteRuntime();
+</script>
+<footer id="fixed-footer">
+  <div class="copyright">
+    &copy; 2024-2025 <a href="https://xingyuanbaoyue.xyz" target="_blank">星原抱月</a>
+  </div>
+  <div>
+    <a href="https://icp.gov.moe/?keyword=20250460" target="_blank">萌ICP备20250460号</a>
+  </div>
+  <div class="github-badge">
+    <span class="badge-subject">雾备</span>
+    <a style="color:#fff" href="https://icp.scfc.top/id.php?keyword=20250460" rel="external" target="_blank">
+      <span class="badge-value bg-cai">20250460号</span>
+    </a>
+    <body class="bg-white text-black">
+  <!-- 顶部计时器 -->
+  <div id="site-runtime-container">
+  ウェブサイトの営業時間：<span id="site-runtime">読み込み中……</span>
+</div>
+</body>
+</html><!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>星原抱月</title>
+  <style>
+    /* 开屏容器样式 */
+    #splashScreen {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: #ffe4ec; /* 淡粉 */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      animation: fadeOut 0.7s ease-in-out 1.5s forwards;
+    }
+
+    /* 转圈加载动画 */
+    .loader {
+      width: 40px;
+      height: 40px;
+      border: 4px solid #f9b8d0;
+      border-top: 4px solid transparent;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    /* 主页面内容默认隐藏，开屏结束后显示 */
+    #mainContent {
+      opacity: 0;
+      transition: opacity 0.7s ease-in-out;
+    }
+
+    /* 开屏淡出后显示内容 */
+    body.splash-finished #mainContent {
+      opacity: 1;
+    }
+
+    /* 动画关键帧 */
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @keyframes fadeOut {
+      to {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 开屏动画 -->
+  <div id="splashScreen">
+    <h1 style="color:#d63384; font-size: 2em; margin-bottom: 1em;">🌸 星原抱月</h1>
+    <div class="loader"></div>
+  </div>
+
+  <!-- 主页面内容 -->
+  <div id="mainContent">
+    <!-- 你的语言选择公告、主页等内容放这里 -->
+    <h2>欢迎进入主页！</h2>
+  </div>
+
+  <!-- 控制动画结束后显示内容 -->
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      // 在 2.2 秒后移除 splash 状态，展示主页面
+      setTimeout(() => {
+        document.body.classList.add('splash-finished');
+      }, 2200); // 1.5s 延迟 + 0.7s 动画
+    });
+  </script>
+
+</body>
+</html>
