@@ -89,30 +89,81 @@
     <h1>ようこそ、私の世界へ！</h1>
     <p class="typed-text"></p>
   </main>
-      <div class="flex flex-col items-center space-y-3 mt-10">
-     <!-- 卡片1 -->
-  <a href="https://twitch.tv/xingyuanbaoyue" target="_blank"
-     class="bg-pink-100 text-black rounded-lg px-4 py-2 w-48 text-center shadow hover:bg-pink-200 transition">
-    Twitch
-     </a>
-      <!-- 卡片2 -->
-  <a href="https://youtube.com/@星原抱月" target="_blank"
-     class="bg-pink-100 text-black rounded-lg px-4 py-2 w-48 text-center shadow hover:bg-pink-200 transition">
-    YouTube
-  </a>
-   <!-- 卡片3 -->
-  <a href="https://space.bilibili.com/3493270734768520?spm_id_from=333.337.0.0" target="_blank"
-     class="bg-pink-100 text-black rounded-lg px-4 py-2 w-48 text-center shadow hover:bg-pink-200 transition">
-    Bilibili
-  </a>
-  <a href="https://x.com/blblqiurixiaxi" target="_blank"
-     class="bg-pink-100 text-black rounded-lg px-4 py-2 w-48 text-center shadow hover:bg-pink-200 transition">
-    Twitter
-  </a>
-  <a href="https://steamcommunity.com/profiles/76561199660623327/" target="_blank"
-     class="bg-pink-100 text-black rounded-lg px-4 py-2 w-48 text-center shadow hover:bg-pink-200 transition">
-    Steam
-  </a>
+       <head>
+  <meta charset="UTF-8" />
+  <title>社交图标栏</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- 引入 Font Awesome 图标库 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .social-icons a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      background-color: #ffd9ec;
+      border-radius: 50%;
+      color: #c15689;
+      font-size: 24px;
+      text-decoration: none;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      background-color: #ffc1e0;
+      color: #ffffff;
+      transform: scale(1.1);
+    }
+
+    .bilibili-icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    @media (max-width: 480px) {
+      .social-icons {
+        gap: 16px;
+        padding: 16px;
+      }
+      .social-icons a {
+        width: 44px;
+        height: 44px;
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 社交图标栏 -->
+  <div class="social-icons">
+    <a href="https://github.com/xingyuanbaoyue" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://steamcommunity.com/profiles/76561199660623327" target="_blank"><i class="fab fa-steam"></i></a>
+    <a href="https://youtube.com/@星原抱月" target="_blank"><i class="fab fa-youtube"></i></a>
+    <a href="https://twitch.tv/xingyuanbaoyue" target="_blank"><i class="fab fa-twitch"></i></a>
+    <a href="https://x.com/blblqiurixiaxi" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.tiktok.com/@baoyuexingyuan?is_from_webapp=1&sender_device=pc" target="_blank"><i class="fab fa-tiktok"></i></a>
+    <a href="https://space.bilibili.com/3493270734768520?spm_id_from=333.337.0.0" target="_blank">
+      <img src="https://www.bilibili.com/favicon.ico" alt="Bilibili" class="bilibili-icon">
+	    </a>
+    <a href="https://t.me/Adachi_Natsuki" target="_blank"><i class="fab fa-telegram"></i></a>
+    <a href="https://wa.me/447756536580" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://www.facebook.com/share/1ZcZhW6gTH" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.instagram.com/baoyuexingyuan你的用户名" target="_blank"><i class="fab fa-instagram"></i></a>
+  </div>
+</body>
 </div>
   <meting-js
     server="netease"
